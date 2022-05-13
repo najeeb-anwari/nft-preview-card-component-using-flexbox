@@ -61,6 +61,7 @@ main {
 .equilibrium {
     position: relative;
     display: flex;
+    cursor: pointer;
 }
 /* Active state */
 .equilibrium:hover .equilibrium-overlay {
@@ -95,6 +96,8 @@ main {
 /* Active state */
 .card h2:hover {
     color: var(--primary-color-cyan);
+    cursor: pointer;
+    transition: .4s;
 }
 
 /* Ethereum info */
@@ -140,9 +143,11 @@ main {
 
 .author-name {
     color: var(--white-color);
+    transition: .4s;
 }
 
 /* Active state */
 .author-name:hover {
     color: var(--primary-color-cyan);
+    cursor: pointer;
 }
