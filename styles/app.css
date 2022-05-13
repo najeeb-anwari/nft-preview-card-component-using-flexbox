@@ -50,7 +50,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     width: 90%;
     max-width: 335px;
     background-color: var(--card-bg-color);
@@ -59,8 +58,32 @@ main {
 
 }
 
+.equilibrium {
+    position: relative;
+    display: flex;
+}
+/* Active state */
+.equilibrium:hover .equilibrium-overlay {
+    opacity: 1;
+}
+
+.equilibrium-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, .5);
+    border-radius: .5rem;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .4s;
+}
+
 .equilibrium-img {
     border-radius: .5rem;
+    max-width: 100%;
 }
 
 .card h2 {
@@ -68,6 +91,12 @@ main {
     margin: 1rem 0;
     font-weight: 400;
 }
+
+/* Active state */
+.card h2:hover {
+    color: var(--primary-color-cyan);
+}
+
 /* Ethereum info */
 .ethereum-info {
     padding: 1rem 0;
@@ -111,4 +140,9 @@ main {
 
 .author-name {
     color: var(--white-color);
+}
+
+/* Active state */
+.author-name:hover {
+    color: var(--primary-color-cyan);
 }
